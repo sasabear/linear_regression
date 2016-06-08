@@ -1,0 +1,6 @@
+setwd("/Users/jiahongHu/Desktop/Spring 2015/Linear Regression 4315/hw")
+data<-read.table("http://www.stat.ufl.edu/~rrandles/sta4210/Rclassnotes/data/textdatasets/KutnerData/Chapter%20%201%20Data%20Sets/CH01PR19.txt")
+names(data)<-c("GPA","ACT")
+attach(data)
+fit<-lm(GPA~ACT)
+summary(fit)
